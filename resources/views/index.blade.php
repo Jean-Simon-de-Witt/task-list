@@ -11,6 +11,10 @@
         <div>There are no tasks!</div>
     @endforelse
 
+    <div>
+        <a href="{{route('tasks.create')}}">Create Task</a>
+    </div>
+
     @if ($tasks->count())
         <nav>
             {{$tasks->links()}}
